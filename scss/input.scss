@@ -1,0 +1,49 @@
+
+.navBar {
+  width: 100%;
+  display: flex;
+  position: fixed;
+  border: 1px solid red;
+  .title {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-left: 10px;
+  }
+  .left{
+    display: flex;
+  }
+  .middle {
+    display: flex;
+  }
+  .right {
+    display: flex;
+    button {
+      background-color: #49c5b6;
+      height: 60px;
+    }
+    button:hover {
+      background-color: #3da094;
+    }
+  }
+}
+
+
+.mainPageBody {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.column{
+  display: flex;
+  flex-direction: column;
+}
+
+.box {
+  margin-top: 40px;
+  display: flex;
+  height: 350px;
+  width: 350px;
+  border: solid 2px black;
+}
