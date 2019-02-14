@@ -2,38 +2,193 @@
   width: 100%;
   display: flex;
   position: fixed;
-  border: 1px solid red; }
+  border: 1px solid lightgray;
+  border-top: none;
+  background-color: white; }
   .navBar .title {
     display: flex;
     width: 100%;
     justify-content: space-between;
     margin-left: 10px; }
-  .navBar .left {
-    display: flex; }
-  .navBar .middle {
-    display: flex; }
-  .navBar .right {
-    display: flex; }
-    .navBar .right button {
-      background-color: #49c5b6;
-      height: 60px; }
-    .navBar .right button:hover {
-      background-color: #3da094; }
+    .navBar .title .left {
+      display: flex;
+      align-self: center; }
+      .navBar .title .left .left1 {
+        display: flex;
+        border-right: 1px solid gray;
+        padding-right: 10px; }
+        .navBar .title .left .left1 img {
+          margin-top: -3px;
+          margin-right: 4px; }
+      .navBar .title .left img {
+        height: 30px;
+        margin-left: 10px; }
+      .navBar .title .left img:hover {
+        cursor: pointer; }
+    .navBar .title .middle {
+      display: flex;
+      margin-left: 325px;
+      align-items: center; }
+    .navBar .title .right {
+      display: flex; }
+      .navBar .title .right button {
+        background-color: #49c5b6;
+        height: 60px; }
+      .navBar .title .right button:hover {
+        background-color: #3da094; }
+      .navBar .title .right p {
+        align-self: center;
+        margin-right: 20px; }
+
+.navBar1 {
+  width: 100%;
+  display: flex;
+  position: fixed;
+  margin-top: 60px;
+  border: 1px solid lightgray;
+  background-color: white; }
+  .navBar1 .title {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 10px; }
+    .navBar1 .title .left {
+      display: flex;
+      align-self: center; }
+      .navBar1 .title .left .filterBy {
+        border-right: 1px solid lightgray;
+        padding-right: 10px; }
+      .navBar1 .title .left .awards {
+        border-right: 1px solid lightgray;
+        padding-right: 10px;
+        padding-left: 10px; }
+      .navBar1 .title .left .awards:hover {
+        background-color: lightgray; }
+      .navBar1 .title .left .categories {
+        border-right: 1px solid lightgray;
+        padding-right: 10px;
+        padding-left: 10px; }
+      .navBar1 .title .left .categories:hover {
+        background-color: lightgray; }
+      .navBar1 .title .left .tags {
+        border-right: 1px solid lightgray;
+        padding-right: 10px;
+        padding-left: 10px; }
+      .navBar1 .title .left .tags:hover {
+        background-color: lightgray; }
+      .navBar1 .title .left .technologies {
+        border-right: 1px solid lightgray;
+        padding-right: 10px;
+        padding-left: 10px; }
+      .navBar1 .title .left .technologies:hover {
+        background-color: lightgray; }
+      .navBar1 .title .left .colors {
+        border-right: 1px solid lightgray;
+        padding-right: 10px;
+        padding-left: 10px; }
+      .navBar1 .title .left .colors:hover {
+        background-color: lightgray; }
+      .navBar1 .title .left .countries {
+        border-right: 1px solid lightgray;
+        padding-right: 10px;
+        padding-left: 10px; }
+      .navBar1 .title .left .countries:hover {
+        background-color: lightgray; }
+    .navBar1 .title .right1 {
+      width: 100px;
+      display: flex;
+      height: 50px;
+      justify-content: center;
+      align-items: center;
+      border-left: 1px solid lightgray; }
+      .navBar1 .title .right1 img {
+        height: 24px;
+        display: flex; }
+      .navBar1 .title .right1 img:hover {
+        background-color: lightgray; }
 
 .mainPageBody {
   display: flex;
   width: 100%;
-  justify-content: space-around; }
+  flex-flow: wrap row;
+  justify-content: space-between;
+  padding: 0; }
 
-.column {
+.inner {
   display: flex;
-  flex-direction: column; }
+  height: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 40px 0 40px;
+  clear: both;
+  justify-content: flex-start; }
+
+.row {
+  margin-top: 150px;
+  display: flex; }
 
 .box {
-  margin-top: 40px;
+  border: solid 1px black;
   display: flex;
-  height: 350px;
-  width: 350px;
-  border: solid 2px black; }
+  flex-direction: column;
+  width: 352px;
+  height: 380px;
+  margin: 10px auto 10px auto; }
+  .box img {
+    display: flex;
+    width: 350px;
+    height: 250px; }
+  .box .information {
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-bottom: 10px;
+    height: 90px;
+    border-bottom: 1px solid lightblue;
+    display: flex;
+    justify-content: space-between; }
+    .box .information .name {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+    .box .information .date {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end; }
+  .box .bottomBar {
+    display: flex;
+    flex-direction: flex-end;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px; }
+    .box .bottomBar .author {
+      width: 125px;
+      display: flex;
+      justify-content: space-around; }
+      .box .bottomBar .author img {
+        display: flex;
+        height: 20px;
+        width: auto;
+        background-color: lightblue;
+        border-radius: 50px; }
+    .box .bottomBar .tags {
+      display: flex;
+      justify-content: space-around;
+      width: 100px; }
+      .box .bottomBar .tags .crtn {
+        background-color: lightgreen;
+        border-radius: 15px;
+        padding: 2px; }
+      .box .bottomBar .tags .mv {
+        background-color: lightpink;
+        border-radius: 15px;
+        padding: 2px 3px 2px 3px; }
+      .box .bottomBar .tags .goat {
+        background-color: lightyellow;
+        border-radius: 15px;
+        padding: 2px; }
+
+#abc {
+  background-color: red; }
 
 /*# sourceMappingURL=input.css.map */
